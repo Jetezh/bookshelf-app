@@ -1,0 +1,189 @@
+:root {
+    --accent-color: rgb(255, 198, 112);
+}
+
+* {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 20px 0;
+    top: 0;
+    background-color: var(--accent-color);
+}
+
+.header h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid rgb(178, 178, 178);
+}
+
+input:focus {
+    border: 2px solid black;
+}
+
+/* start of addbook and editbook */
+
+.addbook-container {
+    box-shadow: 0 0 7px gray;
+    border-radius: 10px;
+    width: 60vw;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.input-value {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.input-value label {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.input-value input[type="text"], input[type="number"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16pt;
+}
+
+.input-value:nth-child(4) {
+    display: flex;
+    align-items: center;
+}
+
+.input-value input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.input-value input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.submit-button {
+    border: 0 ;
+    border-radius: 7px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: large;
+    font-weight: normal;
+    background-color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 223, 174);
+}
+
+.submit-button:active {
+    transform: scale(0.97);
+}
+
+.submit-button span {
+    font-weight: bold;
+}
+
+/* end of addbook and editbook */
+
+/* start of searchbar*/
+.search-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-book label {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.search-book input[type="text"] {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16pt;
+}
+
+button {
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    border: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 223, 174);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* end of searchbar*/
+
+.book-card {
+    box-shadow: 0 0 3px 2px rgb(178, 178, 178);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.book-title {
+    font-size: 20pt;
+    margin: 5px 0 0 0;
+}
+
+.book-author {
+    font-size: 16pt;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+
+.book-year {
+    font-size: 16pt;
+    font-weight: 400;
+    margin: 10px 0;
+}
